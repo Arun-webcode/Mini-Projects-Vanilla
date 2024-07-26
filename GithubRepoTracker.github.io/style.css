@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#searchbar {
+  display: flex;
+  flex-direction: row;
+}
+#getRepositryBtn {
+  margin-left: 10px;
+  height: 38px;
+}
+
+#profile {
+  display: flex;
+  flex-direction: row;
+}
+
+#f-f-u {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#repositories {
+  gap: 10%;
+}
+
+#card {
+  width: 45%;
+}
+
+#user_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 2px 0px 25px 10px;
+}
+
+.center-align {
+  display: flex;
+  align-items: center;
+}
+
+#right-details {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.location {
+  display: flex;
+  align-items: center;
+}
+.material-symbols-outlined {
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.btn {
+  padding: 0.175rem 0.75rem;
+  margin: 1px 10px 1px 2px;
+}
+#perPageSelect {
+  width: 10%;
+}
