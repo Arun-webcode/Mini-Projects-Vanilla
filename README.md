@@ -1,1 +1,1 @@
-# Minor-Projects-Vanilla
+# Mini-Projects-Vanilla
