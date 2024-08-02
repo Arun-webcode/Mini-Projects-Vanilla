@@ -1,0 +1,81 @@
+#main-window{
+    display: grid;
+    width: 90%;
+    height: auto;
+    margin: 7% 5% 7% 5%;    
+    background-color: white;
+    border-radius: 10px;
+}
+#left img{
+    aspect-ratio: 10.5/9;
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+    border-radius: 10px 10px 0px 0px;
+}
+#right{
+    display: grid ;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px 25px 20px 25px;
+}
+
+#heading{
+    font-family: 'Lexend Zetta', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+}
+#right h2{    
+    font-family: 'Fraunces', serif;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: .9em;
+    margin: 17px 0px 15px 0px;
+    color: hsl(212, 21%, 14%);
+}
+#right p{
+    font-size: .9rem;     
+    height: 60px;
+    line-height: 20px;
+    letter-spacing: .6px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 40px;
+    font-family: 'Lexend Zetta', sans-serif; 
+}
+#price{
+    display: flex;
+    align-items: center;
+}
+#actual-price{    
+    font-family: 'Fraunces', serif;     
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-weight: 1000;
+    margin-right: 10px;   
+}
+
+#cross-price{    
+    font-family: 'Fraunces', serif;    
+    color: hsl(158, 36%, 37%);
+    font-size: 12px;  
+    text-decoration: line-through;  
+}
+#button{        
+    width: 285px;
+    height: 45px;
+    margin: 18px 0px 0px 1px;
+    border: 0px solid;
+    border-radius: 6px;
+    background-color: hsl(158, 36%, 37%);
+    font-size: .9rem;    
+    color: hsl(0, 0%, 100%);
+    letter-spacing: .9px;    
+    font-weight: 600;
+}
+#button img{
+    width: 13px;
+    margin-right: 5px;
+}

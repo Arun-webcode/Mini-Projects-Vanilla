@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-sesrif;
+}
+#main-window{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    margin: 10% 35% 10% 35%;    
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* This is left part of images */
+#left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 0px 0px 5px;
+}
+/* Whole right side */
+#right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+#heading{
+    font-family: 'Lexend Zetta', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 8px;
+    color: hsl(228, 12%, 48%);
+}
+#right h2{    
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    line-height: .9em;
+    margin: 17px 0px 15px 0px;
+    color: hsl(212, 21%, 14%);
+}
+#right p{
+    font-size: .6rem;     
+    height: 60px;
+    line-height: 15px;
+    letter-spacing: .6px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 15px;
+    font-family: 'Lexend Zetta', sans-serif; 
+}
+#price{
+    display: flex;
+    align-items: center;
+}
+#actual-price{    
+    font-family: 'Fraunces', serif;     
+    color: hsl(158, 36%, 37%);
+    font-size: 25px; 
+    margin-right: 10px;   
+}
+
+#cross-price{    
+    font-family: 'Fraunces', serif;    
+    color: hsl(158, 36%, 37%);
+    font-size: 10px;  
+    text-decoration: line-through;  
+}
+#button{        
+    width: 160px;
+    height: 31px;
+    margin: 18px 0px 0px 1px;
+    border: 0px solid;
+    border-radius: 6px;
+    background-color: hsl(158, 36%, 37%);
+    font-size: .6rem;    
+    color: hsl(0, 0%, 100%);
+    letter-spacing: .9px;    
+}
+#button img{
+    width: 9px;
+    margin-right: 5px;
+}
