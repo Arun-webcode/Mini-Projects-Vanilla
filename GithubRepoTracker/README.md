@@ -7,7 +7,7 @@ GitHub Repository Tracker is a web application that allows users to track GitHub
 ## Links
 
 - GitHub Repository: [GitHubRepoTracker](https://github.com/Arun-webcode/GithubRepoTracker.github.io)
-- Online Hosted Version: [GitHubRepoTracker Online](https://arun-webcode.github.io/GithubRepoTracker.github.io/)
+- Online Hosted Version: [GitHubRepoTracker Online](https://github-repotracker.netlify.app/)
 
 ## Tech Stack
 
@@ -25,7 +25,7 @@ GitHub Repository Tracker is a web application that allows users to track GitHub
 
 ## Usage
 
-1. Open the [GitHubRepoTracker Online](https://arun-webcode.github.io/GithubRepoTracker.github.io/) link.
+1. Open the [GitHubRepoTracker Online](https://github-repotracker.netlify.app/) link.
 2. Input a GitHub username in the designated field.
 3. Click the search button to view the user's profile and associated repositories.
 
