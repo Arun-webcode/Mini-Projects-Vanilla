@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+body{
+    font-family: "Myriad Pro", Arial, Helvetica, sans-serif !important;
+    padding: 0px;
+}
+
+.home{
+    background-color: #e2dfdfe3;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    width: 985px;
+    /* background-color: #FFFFFF; */
+    margin: 0 auto;
+    clear: both;
+}
+
+/* Navbar Included Menu, Media, Name */
+#header{
+    /* border: solid red; */
+    position: relative;
+    background-color: white;
+    border-width: 1px;
+    height: 120px;
+    box-shadow: 0px 1px 2px rgb(163, 160, 160);
+    
+}
+#social{
+    width: 50%;
+    float: right;
+    margin-right: 1%;
+    height: 25px;
+    text-align: right;
+    padding-top: 5px;
+    display: block;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 14px;
+    list-style: none;
+    font-size: 14px;
+    float: right;
+}
+
+#navbar li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555555;
+    padding: 5px 6px;
+    margin-left: 1px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(250, 250, 250);
+    background-color: #31a3dd;
+}
+
+#navline {
+    width: 100%;
+    display: inline;
+    clear: both;
+    position: absolute;
+}
+#navLine .red {
+    margin-top: 33px;
+    width: 50%;
+    height: 4px;
+    background-color: #db292c;
+    float: left;
+}
+/* .red {
+    color: #FF0000 !important;
+} */
+#navLine .blue {
+    margin-top: 33px;
+    width: 50%;
+    height: 4px;
+    background-color: #31a3dd;
+    float: left;
+}
+
+#navlogo img {
+    display: flex;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 43px;
+    z-index: 9999;
+}
+/* Navigationbar is complete. */
+#content{
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 5px;
+}
+#homeimg{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#homeimg img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    /* width: 75%;
+    text-align: center;
+    margin-bottom: 20px; */
+}
+    /* border: solid red; */
+    /* background: url('HomeimageSM.jpg') no-repeat center center/cover; */
+    /* background: no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 122px;
+    left: 0px;
+    height: 86%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 20px; */
+    /* box-shadow: 0px 2px 2px gray;
+} */
+
+#text{
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    background-color: white;
+    padding: 0px 30px 30px 30px;
+    /* margin-top: 61%; */
+}
+#text p{
+    width: 94%;
+    clear: both;
+    margin: 14px auto;
+    font-size: 18px;
+    color: #777777;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#text p a{
+    color: #08c;
+    text-decoration: none;
+}
+
+.oswl{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+    color: #413b3b;
+    line-height: 34px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+.btn{
+    padding: 10px 30px;
+    border: 2px solid white;
+    background-color: #9b3032fd;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 27px;
+    cursor: pointer;
+    margin-left: 35%;
+    font-weight: bold;
+}
+
+#footer {
+    /* border: solid red; */
+    width: 100%;
+    display: flexbox;
+    clear: both;
+    position: relative;
+    /* padding: 3% 0; */
+}
+#footer .redfoot {
+    /* border: solid greenyellow; */
+    width: 50%;
+    height: 170px;
+    background-color: #c24a4d;
+    /* padding: 30px; */
+    float: left;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.redfoot h2{
+    color: white;
+    padding: 20px 15px 15px 15px;
+}
+.redfoot h5{
+    color: white;
+    padding: 0px 15px;
+}
+
+#footer .redfoot .social_box {
+    width: 90%;
+    float: left;
+    background-color: #efece7;
+    height: 25px;
+    padding: 1% 2% 1% 1%;
+    margin: 17px;
+    position: relative;
+}
+
+#footer .redfoot .social_box .lft{
+    width: 27%;
+    float: left;
+    font-size: 11px;
+    color: #555555;
+    line-height: 25px;
+}
+
+#footer .redfoot .social_box .lft .subs{
+    margin-top: -27%;
+    margin-left: 28px;
+    font-size: .75rem;
+}
+
+/* #footer .redfoot .social_box .lft .left b{
+     margin-bottom: 4px; 
+}
+
+#footer .redfoot .social_box .rgt{
+     margin: 6px;
+} */
+
+#footer .redfoot .social_box .link #link{
+    font-size: .8rem;
+    text-decoration: none;
+    color: #555555;
+    display: flex;
+    float: left;
+    position: relative;
+    margin-left: 249px;
+    margin-top: -22px;
+}
+
+#footer .bluefoot {
+    width: 50%;
+    height: 170px;
+    background-color: #31a3dd;
+    /* padding: 30px; */
+    float: left;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bluefoot h2{
+    color: white;
+    padding: 15px;
+}
+.bluefoot h5{
+    color: white;
+    padding: 2px 15px;
+}
+
+#footer .bluefoot .social_box {
+    display: block;
+    /* width: 97%;
+    float: left;
+    background-color: #efece7;
+    height: 25px;
+    padding: 1% 2% 2% 1%; */
+    width: 90%;
+    float: left;
+    background-color: #efece7;
+    height: 25px;
+    padding: 1% 2% 1% 1%;
+    margin: 18px 17px;
+    position: relative;
+}
+
+#footer .bluefoot .social_box .likes{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 30px;
+    color: #555555;
+    font-size: .75rem;
+}
+
+#footer .bluefoot .social_box .lft{
+    width: 20%;
+    float: left;
+    font-size: 11px;
+    color: #555555;
+    line-height: 25px;
+
+    /* width: 8%;
+    float: left;
+    font-size: 11px;
+    color: #555555;
+    line-height: 25px; */
+}
+
+#footer .bluefoot .social_box .rgt{
+    margin-top: 2px;
+}
+
+#footer .bluefoot .social_box .link #linked{
+    font-size: .8rem;
+    text-decoration: none;
+    color: #555555;
+    display: flex;
+    float: left;
+    position: relative;
+    margin-left: 200px;
+    margin-top: -30px;
+}
