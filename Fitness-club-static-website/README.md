@@ -5,6 +5,4 @@
   <li>It's only for practice purpose.</li>
   <li>Comment if you like this.</li> 
 </ul>
-<img src="https://github.com/Arun-webcode/Fitness-club-static-website/blob/main/Screenshot%20Gym%20webpage.png" width="70%" height="80%">
-
-\*\* Live link -- https://vikrantfitnessclub.netlify.app/
+<img src="https://github.com/Arun-webcode/Mini-Projects-Vanilla/blob/main/Fitness-club-static-website/Screenshot%20Gym%20webpage.png" width="70%" height="80%">
