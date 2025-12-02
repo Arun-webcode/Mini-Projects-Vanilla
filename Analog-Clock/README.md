@@ -6,3 +6,5 @@
   <li>Refrence is taken from Youtube.</li>
 </ul>
 
+
+<img src="https://github.com/Arun-webcode/Mini-Projects-Vanilla/blob/main/Analog-Clock/Clock%20image.png" width="70%" height="80%">
