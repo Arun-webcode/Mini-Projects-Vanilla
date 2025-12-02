@@ -6,5 +6,3 @@
   <li>It's only for practice purposes.</li>
   <li>Created with the help of coding ninjas lectures.</li>  
 </ul>
-
-\*\* Live link -- https://blog-site-coding-ninjas.netlify.app/
