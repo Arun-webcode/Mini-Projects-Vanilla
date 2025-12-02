@@ -11,8 +11,6 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #edf1f4;
-    padding: 20px;
-    /* small padding so calculator has breathing room on tiny screens */
 }
 
 .dark {
@@ -22,8 +20,6 @@ body {
 .calculator {
     position: relative;
     width: 340px;
-    max-width: 94vw;
-    /* responsive: doesn't overflow viewport */
     padding: 20px;
     border-radius: 20px;
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fffb;
@@ -35,16 +31,11 @@ body {
         -15px -15px 20px rgba(255, 255, 255, 0.1);
 }
 
-/* ---------- Grid for buttons ---------- */
 .calculator .buttons {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* responsive grid */
-    gap: 10px;
 }
 
-/* ---------- DISPLAY (keeps original look, prevents overlap) ---------- */
 .calculator .buttons #value {
     position: relative;
     grid-column: span 4;
@@ -61,33 +52,39 @@ body {
     font-size: 2em;
     font-weight: 500;
 
-    /* Prevent overlap: allow horizontal scrolling for long numbers */
+    /* ➤ FIXES */
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
-/* hide scrollbar visually for webkit (keeps clean look) */
+/* Hide scrollbar (optional) */
 .calculator .buttons #value::-webkit-scrollbar {
-    height: 6px;
+    display: none;
 }
 
-.calculator .buttons #value::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-}
 
 .dark .calculator .buttons #value {
     background: #33393e;
     color: #eee;
     box-shadow: inset 15px 15px 20px rgba(0, 0, 0, 0.5),
         inset -15px -15px 20px rgba(255, 255, 255, 0.1);
+
+    /* ➤ FIXES */
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
-/* ---------- Buttons (kept your original visuals and :active effect) ---------- */
+.dark .calculator .buttons #value::-webkit-scrollbar {
+    display: none;
+}
+
+
 .calculator .buttons span {
     position: relative;
     padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 20px #fff;
     margin: 10px;
     cursor: pointer;
     user-select: none;
@@ -100,30 +97,25 @@ body {
     border: 2px solid #edf1f4;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
     border-radius: 10px;
-    background: #fff;
 }
 
-/* YOUR ORIGINAL :active pressing effect — kept exactly as you had */
+.dark .calculator .buttons span {
+    color: #eee;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+        -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
 .calculator .buttons span:active {
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
     color: #f44336;
 }
 
-/* ---------- Dark Mode Button Fix (NEW) ---------- */
-.dark .calculator .buttons span {
-    background: #2e3336 !important;   /* dark button */
-    color: #f1f1f1 !important;        /* visible text */
-    border-color: #3a3f42 !important;
-}
-
-/* active press effect stays original feel */
 .dark .calculator .buttons span:active {
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.35),
-                inset -5px -5px 10px rgba(255, 255, 255, 0.05);
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+        inset -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
 
-
-/* Special button styles (kept original colors & grid rules) */
 .calculator .buttons span#clear {
     grid-column: span 2;
     background: #f44336;
@@ -145,15 +137,14 @@ body {
     border: 2px solid #edf1f4;
 }
 
-/* dark-mode special button adjustments (kept) */
 .dark .calculator .buttons span#clear,
 .dark .calculator .buttons span#plus,
 .dark .calculator .buttons span#equal {
     border: 2px solid #333;
+
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* maintain the combined box-shadow you had for those special buttons */
 .calculator .buttons span#clear,
 .calculator .buttons span#plus,
 .calculator .buttons span#equal {
@@ -161,7 +152,12 @@ body {
         inset 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* toggle button (kept original look & dark-mode counterpart) */
+/* .dark .calculator .buttons span#clear:active,
+.dark .calculator .buttons span#plus:active,
+.dark .calculator .buttons span#equal:active{
+    /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1); 
+} */
+
 .toggleBtn {
     position: fixed;
     top: 20px;
@@ -180,25 +176,4 @@ body {
     border: 2px solid #333;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
         -5px -5px 10px rgba(255, 255, 255, 0.25);
-}
-
-/* ---------- Responsive tweaks for small screens ---------- */
-@media (max-width: 420px) {
-    .calculator {
-        width: 100%;
-        padding: 16px;
-    }
-
-    .calculator .buttons span {
-        margin: 6px;
-        padding: 10px;
-        font-size: 1rem;
-    }
-
-    .calculator .buttons #value {
-        height: 80px;
-        line-height: 80px;
-        font-size: 1.6rem;
-        padding: 0 12px;
-    }
 }
