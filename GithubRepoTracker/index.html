@@ -16,42 +16,29 @@
 
 <body>
 
-  <div class="container mt-3">
-    <h3>GitHub Repositories</h3>
-    <label for="username">Enter GitHub username:</label>
-    <span id="searchbar" style="display: flex;
-    flex-direction: row;">
-      <input type="text" id="username" class="form-control mb-3" placeholder="e.g., johnpapa" autocomplete="username" />
-      <button class="btn btn-primary mb-3" id="getRepositryBtn">Search
-      </button></span>
-    <div class="container mt-3">
-      <div id="profile" class="mt-4"></div>
-      <div class="mt-4 d-flex flex-wrap" id="repositories"></div>
-      <nav style="display: flex; align-items: start; justify-content: space-between;">
-        <!-- <ul class="pagination" id="pagination">
-          <ul class="pagination justify-content-center">
-            <li class="page-item" id="prevPage">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <ul class="pagination" id="paginationList">
-              Page links will be dynamically added here
-            </ul>
-            <li class="page-item" id="nextPage">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </ul> -->
-        <select id="perPageSelect" class="form-select">
-          <option value="10">10</option>
-          <option value="25">25</option>
-          <option value="50">50</option>
-          <option value="100">100</option>
-        </select>
-      </nav>
+  <div class="container mt-4">
+    <h3 class="fw-bold mb-3">GitHub Repositories</h3>
+
+    <label for="username" class="form-label">Enter GitHub username:</label>
+
+    <div id="searchbar">
+      <input type="text" id="username" class="form-control" placeholder="e.g., johnpapa">
+      <button class="btn btn-primary" id="getRepositryBtn">Search</button>
+    </div>
+
+    <div id="profile" class="mt-4"></div>
+
+    <h5 class="mt-4 mb-3 fw-semibold">Repositories</h5>
+    <div id="repositories" class="d-flex flex-wrap"></div>
+
+    <div class="pagination-controls mt-4">
+      <label class="form-label">Repos per page:</label>
+      <select id="perPageSelect" class="form-select">
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+      </select>
     </div>
   </div>
 

@@ -1,75 +1,133 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
+
+/* Searchbar */
 #searchbar {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
 }
+
 #getRepositryBtn {
-  margin-left: 10px;
-  height: 38px;
+    min-width: 120px;
 }
 
+/* Profile Section */
 #profile {
-  display: flex;
-  flex-direction: row;
-}
-
-#f-f-u {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-#repositories {
-  gap: 10%;
-}
-
-#card {
-  width: 45%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f9f9f9;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
 }
 
 #user_img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 2px 0px 25px 10px;
-}
-
-.center-align {
-  display: flex;
-  align-items: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 #right-details {
-  display: flex;
-  align-items: start;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
 }
-.location {
-  display: flex;
-  align-items: center;
+
+#f-f-u {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
+
 .material-symbols-outlined {
-  margin-right: 10px;
+    font-size: 20px;
 }
 
-.name {
-  font-size: 20px;
+/* Repo Cards */
+#repositories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.username {
-  font-size: 20px;
-  font-weight: 400;
-  padding-bottom: 10px;
+.card {
+    width: 46%;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    background: #fff;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: all 0.2s ease;
 }
 
-.btn {
-  padding: 0.175rem 0.75rem;
-  margin: 1px 10px 1px 2px;
+/* Subtle hover */
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
-#perPageSelect {
-  width: 10%;
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.card-body p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.languages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.languages-container .btn {
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+/* Dropdown */
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #user_img {
+        margin: auto;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #searchbar {
+        flex-direction: column;
+    }
+
+    #getRepositryBtn {
+        width: 100%;
+    }
+
+    #perPageSelect {
+        width: 100%;
+    }
 }

@@ -35,24 +35,32 @@
         </div>
     </div>
     <script>
-        let buttons = document.querySelector(".button");
-        let btn = document.querySelectorAll("span");
+        // IMPORTANT: use correct selector ".buttons" (was ".button" typo earlier)
+        let btn = document.querySelectorAll(".buttons span");
         let value = document.getElementById("value");
 
         let toggleBtn = document.querySelector(".toggleBtn");
         let body = document.querySelector("body");
 
-        for (let i = 0; i < btn.length; i++) {
+        for(let i = 0; i < btn.length; i++) {
             btn[i].addEventListener("click", function () {
-                if (this.innerHTML == "=") {
-                    value.innerHTML = eval(value.innerHTML);
+                if(this.innerHTML == "=") {
+                    try {
+                        value.innerHTML = eval(value.innerHTML);
+                    } catch(e) {
+                        value.innerHTML = "Error";
+                    }
                 } else {
-                    if (this.innerHTML == "Clear") {
+                    if(this.innerHTML == "Clear") {
                         value.innerHTML = "";
                     } else {
+                        // if display initially "0" and user types, replace the 0 (keeps your original feel)
+                        if(value.innerHTML === "0") value.innerHTML = "";
                         value.innerHTML += this.innerHTML;
                     }
                 }
+                // auto-scroll the display to the end when content grows
+                value.scrollLeft = value.scrollWidth;
             });
         }
         toggleBtn.onclick = function () {
